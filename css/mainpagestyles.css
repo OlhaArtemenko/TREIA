@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 h1,
@@ -69,7 +69,7 @@ button {
   position: relative;
 }
 .btn-menu-open::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   height: 75px;
@@ -88,7 +88,7 @@ button {
   justify-content: space-between;
 }
 .logo-box-header::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1px;
   height: 75px;
@@ -226,6 +226,7 @@ button {
   position: absolute;
   bottom: -4px;
   left: -8px;
+  fill: #222222;
 }
 /* MATERIALS STYLES================= */
 .container-materials {
@@ -254,7 +255,7 @@ button {
   background-position: top 0 left 0, bottom 0 left 0;
 }
 .text-material {
-  color: #222;
+  color: #222222;
   font-size: 14px;
   font-weight: 100;
   margin-bottom: 35px;
@@ -313,4 +314,13 @@ button {
 }
 .text-create-place {
   margin-bottom: 15px;
+}
+.box-cooperation {
+  position: relative;
+}
+.icon-arrow-to-terms {
+  fill: #222222;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
