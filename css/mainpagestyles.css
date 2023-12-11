@@ -1,0 +1,234 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.section {
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+/* HEADER STYLES MOBILE=============================== */
+.section-header {
+  background-color: #8a8883;
+}
+.logo-box-header {
+  padding: 25px 15px 25px 20px;
+  position: relative;
+}
+.nav-box {
+  display: none;
+}
+.icon-header {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+.btn {
+  stroke: #ffffff;
+  opacity: 0.7;
+  background-color: transparent;
+  border: none;
+}
+.btn-menu-open {
+  padding: 25px 25px;
+  position: relative;
+}
+.btn-menu-open::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.btn-box-header {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo-box-header::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 75px;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* HERO STYLES ================================ */
+.section-hero {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../images/mainpage/mobile/hero_bg_mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.container-hero {
+  padding: 183px 40px 214px 25px;
+}
+.box-from-decktop-hero {
+  display: none;
+}
+.hero-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+.img-logo-hero-bg {
+  width: 188px;
+  height: 63px;
+  flex-shrink: 0;
+  margin-bottom: 12px;
+}
+.link-to-catalog-hero-bg {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+.box-with-link-arrow {
+  position: relative;
+}
+.icon-arrow-to-catalog-hero-bg {
+  fill: #fff;
+  position: absolute;
+  bottom: -4px;
+  left: -8px;
+}
+/* BRAND STYLES================ */
+.container-brand {
+  padding: 56px 20px 30px 20px;
+  overflow: visible;
+}
+.img-traia-mobile {
+  max-width: 386px;
+  margin-left: -20px;
+  margin-bottom: 35px;
+}
+.title-brand {
+  color: #8a8883;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.text-brand {
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.block-brand-with-pic {
+  position: relative;
+  margin-left: -20px;
+  margin-bottom: 35px;
+  width: 375px;
+  height: 220px;
+  background-image: url(../images/mainpage/bath_1.jpg),
+    url(../images/mainpage/bath_2.jpg), url(../images/mainpage/bath_3.jpg);
+  background-size: contain, 128px, contain;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: -64px 37px, 128px 0, 275px 30px;
+}
+.icon-arrow-brand-section {
+  position: absolute;
+  bottom: -5.5px;
+  right: 0;
+  fill: #8a8883;
+}
+/* PRODUCT STYLES=================== */
+.container-product {
+  padding: 30px 20px 15px 20px;
+  overflow: hidden;
+}
+.title-product {
+  color: #8a8883;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.list-of-product {
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+.item-product {
+  display: inline-block;
+  position: relative;
+}
+.item-product:nth-child(1),
+.item-product:nth-child(2) {
+  margin-right: 10px;
+}
+.item-product img {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.name-of-product {
+  color: #8a8883;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.link-product-catalog {
+  color: #222;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.icon-arrow-to-catalog-product {
+  position: absolute;
+  bottom: -4px;
+  left: -8px;
+}
+/* MATERIALS STYLES================= */
+.container-materials {
+  padding: 30px 20px 30px 20px;
+}
+/* COOPERATION STYLES============== */
+.container-cooperation {
+  padding: 30px 20px 30px 20px;
+}
