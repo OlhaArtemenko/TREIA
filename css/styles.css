@@ -131,12 +131,20 @@ button {
 }
 .box-with-link-arrow {
   position: relative;
+  width: 118px;
+  border-bottom: 1px solid #fff;
 }
-.icon-arrow-to-catalog-hero-bg {
-  fill: #fff;
+.box-with-link-arrow::after {
+  content: '';
   position: absolute;
-  bottom: -4px;
-  left: -8px;
+  bottom: -3.5px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left: 5px solid #fff;
 }
 /* BRAND STYLES================ */
 .container-brand {
@@ -175,12 +183,33 @@ button {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: -64px 37px, 128px 0, 275px 30px;
 }
-.icon-arrow-brand-section {
+.block-brand-with-pic::before {
+  content: '';
+  position: absolute;
+  width: 218px;
+  height: 1px;
+  background-color: #8a8883;
+  bottom: 0;
+  right: 0;
+}
+.block-brand-with-pic::after {
+  content: '';
+  position: absolute;
+  bottom: -2.5px;
+  right: 218px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-right: 5px solid #8a8883;
+}
+/* .icon-arrow-brand-section {
   position: absolute;
   bottom: -5.5px;
   right: 0;
   fill: #8a8883;
-}
+} */
 /* PRODUCT STYLES=================== */
 .container-product {
   padding: 30px 20px 15px 20px;
@@ -199,7 +228,6 @@ button {
 }
 .item-product {
   display: inline-block;
-  position: relative;
 }
 .item-product:nth-child(1),
 .item-product:nth-child(2) {
@@ -219,14 +247,23 @@ button {
 .link-product-catalog {
   color: #222;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 15px;
+  padding-right: 10px;
+  border-bottom: 1px solid #222;
+  position: relative;
 }
-.icon-arrow-to-catalog-product {
+.link-product-catalog::after {
+  content: '';
   position: absolute;
-  bottom: -4px;
-  left: -8px;
-  fill: #222222;
+  bottom: -3.5px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left: 5px solid #222;
 }
 /* MATERIALS STYLES================= */
 .container-materials {
@@ -269,13 +306,22 @@ button {
 .text-material-more-details {
   color: #fff;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 400;
+  padding-right: 10px;
+  border-bottom: 1px solid #fff;
+  position: relative;
 }
-.icon-arrow-moredetails {
-  fill: #fff;
+.text-material-more-details::after {
+  content: '';
   position: absolute;
-  bottom: 26px;
-  right: 16px;
+  bottom: -3.5px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left: 5px solid #fff;
 }
 .text-about-designer {
   margin-bottom: 0;
@@ -293,7 +339,7 @@ button {
 .under-title-cooperation {
   color: #8a8883;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 25px;
 }
 .text-cooperation {
@@ -310,17 +356,167 @@ button {
 .link-term-cooperation {
   color: #222;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 400;
+  position: relative;
+  padding-right: 30px;
+  border-bottom: 1px solid #222;
+}
+.link-term-cooperation::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left: 5px solid #222;
 }
 .text-create-place {
   margin-bottom: 15px;
 }
-.box-cooperation {
+/* SECTION FORM STYLES======================= */
+.container-form {
+  padding: 35px 20px 45px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/mainpage/mobile/form_bg_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.text-form {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.form-box {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.input-field {
+  width: 110px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  padding: 9px 8px 10px 8px;
+  color: #222222;
+  font-size: 9px;
+  font-weight: 100;
+}
+.input-field::placeholder {
+  color: rgba(17, 17, 17, 0.5);
+  font-size: 9px;
+  font-weight: 400;
+}
+.btn-send-mobile {
+  width: 100px;
+  height: 30px;
+  border: none;
+  padding: 9px 16px 10px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 500;
+  background-color: #8a8883;
+}
+/* FOOTER STYLES============================ */
+.section-footer {
+  background-color: #8a8883;
+}
+.container-footer {
+  padding: 35px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 100;
+}
+.box-footer-logo {
+  margin-bottom: 9px;
   position: relative;
 }
-.icon-arrow-to-terms {
-  fill: #222222;
+.btn-scroll-up {
   position: absolute;
-  bottom: -4px;
-  left: 0;
+  top: 6px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+.box-footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.nav-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+.nav-list-footer::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 73px;
+  top: 0;
+  left: -15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.list-of-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+.list-of-menu::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 73px;
+  top: 0;
+  left: -15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.link-address {
+  color: #fff;
+}
+.list-socmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.box-footer-list-down {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.box-text-privacy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }

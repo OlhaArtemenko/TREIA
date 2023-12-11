@@ -17,12 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/mainpagestyles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="section section-header">
-      <div class="container container-header">
+      <div class="container container-header" id="header-page">
         <div class="logo-box-header">
           <a class="logo-link-header" href="./mainpage.html">
             <img
@@ -102,11 +102,6 @@
             </h1>
             <div class="box-with-link-arrow">
               <a class="link-to-catalog-hero-bg" href="">to the catalog</a>
-              <svg class="icon-arrow-to-catalog-hero-bg" width="118" height="6">
-                <use
-                  href="./images/mainpage/symbol-defs.svg#icon-arrow-catalog"
-                ></use>
-              </svg>
             </div>
           </div>
           <div class="box-from-decktop-hero">
@@ -148,11 +143,11 @@
             that will add zest to your bathroom and set the mood of the space.
           </p>
           <div class="block-brand-with-pic">
-            <svg class="icon-arrow-brand-section" width="219" height="10">
+            <!-- <svg class="icon-arrow-brand-section" width="219" height="10">
               <use
                 href="./images/mainpage/symbol-defs.svg#icon-arrow-threebaths"
               ></use>
-            </svg>
+            </svg> -->
           </div>
           <p class="text-brand">
             Create your own place of power in your home, where you can relax
@@ -180,11 +175,6 @@
               />
               <p class="name-of-product">Baths</p>
               <a class="link-product-catalog" href="">to the catalog</a>
-              <svg class="icon-arrow-to-catalog-product" width="118" height="6">
-                <use
-                  href="./images/mainpage/symbol-defs.svg#icon-arrow-catalog"
-                ></use>
-              </svg>
             </li>
             <li class="item-product">
               <img
@@ -197,11 +187,6 @@
               />
               <p class="name-of-product">ALBA sinks</p>
               <a class="link-product-catalog" href="">to the catalog</a>
-              <svg class="icon-arrow-to-catalog-product" width="118" height="6">
-                <use
-                  href="./images/mainpage/symbol-defs.svg#icon-arrow-catalog"
-                ></use>
-              </svg>
             </li>
             <li class="item-product">
               <img
@@ -214,11 +199,6 @@
               />
               <p class="name-of-product">CULOARE sinks</p>
               <a class="link-product-catalog" href="">to the catalog</a>
-              <svg class="icon-arrow-to-catalog-product" width="118" height="6">
-                <use
-                  href="./images/mainpage/symbol-defs.svg#icon-arrow-catalog"
-                ></use>
-              </svg>
             </li>
           </ul>
         </div>
@@ -237,11 +217,6 @@
               the materials used
             </p>
             <a class="text-material-more-details" href="">more details</a>
-            <svg class="icon-arrow-moredetails" width="78" height="6">
-              <use
-                href="./images/mainpage/symbol-defs.svg#icon-arrow-catalog"
-              ></use>
-            </svg>
           </div>
           <p class="text-material text-about-designer">
             Our designers are working to create modern and laconic sanitary ware
@@ -274,104 +249,149 @@
             after the bustle of the city, restore energy and temporarily find
             yourself on the shores of a paradise island.
           </p>
-          <div class="box-cooperation">
-            <a class="link-term-cooperation" href="">terms of cooperation</a>
-            <svg class="icon-arrow-to-terms" width="128" height="6">
-              <use
-                href="./images/mainpage/symbol-defs.svg#icon-arrow-black-long"
-              ></use>
-            </svg>
-          </div>
+          <a class="link-term-cooperation" href="">terms of cooperation</a>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <p>
-            Leave your details and we will contact you to discuss all the
-            details
+      <section class="section section-form">
+        <div class="container container-form">
+          <p class="text-form">
+            Leave your details and we will contact you<br />
+            to discuss all the details
           </p>
-          <form>
-            <label for="user-name"></label>
-            <input id="user-name" type="text" />
-            <label for="user-tel"></label>
-            <input id="user-tel" type="tel" />
-            <button type="submit">Send</button>
+          <form class="form-box">
+            <label class="form-box-label" for="user-name"></label>
+            <input
+              class="input-field input-name"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="[A-Za-zа-яА-ЯіІїЇʼєЄґҐ]+"
+              placeholder="Name"
+              required
+            />
+            <label class="form-box-label" for="user-tel"></label>
+            <input
+              class="input-field input-tel"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              placeholder="Phone number"
+              required
+            />
+            <button class="btn-send-mobile" type="submit">Send</button>
           </form>
         </div>
       </section>
     </maim>
     <footer class="section section-footer" id="contact-id">
       <div class="container container-footer">
-        <div>
+        <div class="box-footer-logo">
           <img
             src="./images/mainpage/logo.png"
             alt="logo Treia"
             width="109"
             height="37"
           />
-          <a href="">
-            <svg></svg>
+          <a class="btn-scroll-up" href="#header-page">
+            <svg width="23" height="23">
+              <use
+                href="./images/mainpage/symbol-defs.svg#icon-scroll-up"
+              ></use>
+            </svg>
           </a>
         </div>
-        <div>
-          <address>
-            <ul>
-              <li>
-                <a href="tel:+380997004575">+38 099 700 45 75</a>
+        <div class="box-footer-list">
+          <address class="address-box">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="link-address" href="tel:+380997004575"
+                  >+38 099 700 45 75</a
+                >
               </li>
-              <li>
-                <a href="mailto:info@treia.pro">info@treia.pro</a>
+              <li class="address-item">
+                <a class="link-address" href="mailto:info@treia.pro"
+                  >info@treia.pro</a
+                >
               </li>
-              <li>
+              <li class="address-item">
                 <p>St.Velika Vasilkivska, 20</p>
               </li>
             </ul>
           </address>
-          <nav>
-            <ul>
-              <li>
-                <a href="">Catalog</a>
+          <nav class="nav-box-footer">
+            <ul class="nav-list-footer">
+              <li class="nav-item-footer">
+                <a class="link-address" href="">Catalog</a>
               </li>
-              <li>
-                <a href="">Materials</a>
+              <li class="nav-item">
+                <a class="link-address" href="">Materials</a>
               </li>
-              <li>
-                <a href="">Contacts</a>
+              <li class="nav-item">
+                <a class="link-address" href="">Contacts</a>
               </li>
             </ul>
           </nav>
-          <ul>
-            <li><a href="">About the brand</a></li>
-            <li><a href="">For designers/salons</a></li>
-            <li><a href="">Download catalog</a></li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
+          <ul class="list-of-menu">
+            <li class="item-of-menu">
+              <a class="link-address" href="">About the brand</a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
+            <li class="item-of-menu">
+              <a class="link-address" href="">For designers/salons</a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
+            <li class="item-of-menu">
+              <a class="link-address" href="">Download catalog</a>
             </li>
           </ul>
         </div>
-        <div>
-          <a href="">Privacy Policy</a>
-          <p>Design by @artemenko_n</p>
+        <div class="box-footer-list-down">
+          <ul class="list-socmedia">
+            <li class="item-socmedia">
+              <a class="link-address" href="">
+                <svg
+                  class="socialmedia-link-icon"
+                  width="23"
+                  height="23"
+                  aria-label="telegram icon"
+                >
+                  <use
+                    href="./images/mainpage/symbol-defs.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-socmedia">
+              <a class="link-address" href="">
+                <svg
+                  class="socialmedia-link-icon"
+                  width="23"
+                  height="23"
+                  aria-label="whatsapp icon"
+                >
+                  <use
+                    href="./images/mainpage/symbol-defs.svg#icon-whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-socmedia">
+              <a class="link-address" href="">
+                <svg
+                  class="socialmedia-link-icon"
+                  width="23"
+                  height="23"
+                  aria-label="instagram icon"
+                >
+                  <use
+                    href="./images/mainpage/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="box-text-privacy">
+            <a class="link-address" href="">Privacy Policy</a>
+            <p>Design by @artemenko_n</p>
+          </div>
         </div>
       </div>
     </footer>
