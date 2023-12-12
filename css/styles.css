@@ -114,7 +114,7 @@ button {
 .hero-title {
   color: #fff;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 35px;
 }
 .img-logo-hero-bg {
@@ -126,7 +126,7 @@ button {
 .link-to-catalog-hero-bg {
   color: #fff;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 2px;
 }
 .box-with-link-arrow {
@@ -137,7 +137,7 @@ button {
 .box-with-link-arrow::after {
   content: '';
   position: absolute;
-  bottom: -3.5px;
+  bottom: -3px;
   right: -2px;
   width: 0;
   height: 0;
@@ -165,7 +165,7 @@ button {
 .text-brand {
   color: #222;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 35px;
 }
 .thanks {
@@ -204,12 +204,6 @@ button {
   border-bottom-width: 3px;
   border-right: 5px solid #8a8883;
 }
-/* .icon-arrow-brand-section {
-  position: absolute;
-  bottom: -5.5px;
-  right: 0;
-  fill: #8a8883;
-} */
 /* PRODUCT STYLES=================== */
 .container-product {
   padding: 30px 20px 15px 20px;
@@ -241,7 +235,7 @@ button {
 .name-of-product {
   color: #8a8883;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 8px;
 }
 .link-product-catalog {
@@ -256,7 +250,7 @@ button {
 .link-product-catalog::after {
   content: '';
   position: absolute;
-  bottom: -3.5px;
+  bottom: -3px;
   right: -2px;
   width: 0;
   height: 0;
@@ -294,13 +288,13 @@ button {
 .text-material {
   color: #222222;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 35px;
 }
 .text-material-link {
   color: #fff;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 300;
   width: 172px;
 }
 .text-material-more-details {
@@ -314,7 +308,7 @@ button {
 .text-material-more-details::after {
   content: '';
   position: absolute;
-  bottom: -3.5px;
+  bottom: -3px;
   right: -2px;
   width: 0;
   height: 0;
@@ -339,13 +333,13 @@ button {
 .under-title-cooperation {
   color: #8a8883;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 25px;
 }
 .text-cooperation {
   color: #222;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 35px;
 }
 .img-cooperation {
@@ -364,7 +358,7 @@ button {
 .link-term-cooperation::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: -3px;
   right: -2px;
   width: 0;
   height: 0;
@@ -432,7 +426,7 @@ button {
   flex-direction: column;
   color: #fff;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .box-footer-logo {
   margin-bottom: 9px;
