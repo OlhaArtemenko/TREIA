@@ -106,7 +106,7 @@ button {
   background-size: cover;
 }
 .container-hero {
-  padding: 183px 40px 214px 25px;
+  padding: 170px 20px 214px 20px;
 }
 .box-from-decktop-hero {
   display: none;
@@ -116,6 +116,7 @@ button {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 35px;
+  width: 300px;
 }
 .img-logo-hero-bg {
   width: 188px;
@@ -498,7 +499,7 @@ button {
 .list-socmedia {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 8px;
 }
 .box-footer-list-down {
   margin-top: 20px;
@@ -513,4 +514,57 @@ button {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+/* ===============DESCKTOP================== */
+
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1440px;
+  }
+  /* HERO STYLES============================== */
+  .section-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/mainpage/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .container-hero {
+    padding: 320px 135px 95px 135px;
+  }
+  .box-from-decktop-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  .hero-title {
+    font-size: 20px;
+    margin-bottom: 28px;
+    width: 400px;
+  }
+  .img-logo-hero-bg {
+    width: 342px;
+    height: 117px;
+    margin-bottom: 28px;
+  }
+  .link-to-catalog-hero-bg {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .box-with-link-arrow {
+    width: 188px;
+  }
+  .box-with-link-arrow::after {
+    bottom: -6px;
+    right: -4px;
+    border-bottom-width: 6px;
+    border-top-width: 6px;
+    border-left: 11px solid #fff;
+  }
+  .text-direct-to-media {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+  }
 }
