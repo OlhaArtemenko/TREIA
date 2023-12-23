@@ -417,6 +417,11 @@ button {
   font-weight: 500;
   background-color: #8a8883;
 }
+.btn-send-mobile:hover {
+  background: linear-gradient(90deg, #4caf50 50%, transparent 50%);
+  background-size: 200% 100%;
+  transition: background-color 0.5s;
+}
 /* FOOTER STYLES============================ */
 .section-footer {
   background-color: #8a8883;
